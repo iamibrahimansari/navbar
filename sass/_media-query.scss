@@ -1,0 +1,78 @@
+@media screen and (max-width: 750px){
+    body{
+        position: relative;
+    }
+    .social-links{
+        display: none;
+    }
+    .nav{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+        z-index: -1;
+        width: 100%;
+    }
+    .nav.nav-bar-on{
+        animation-name: showNavBar;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .nav.nav-bar-off{
+        animation-name: hideNavBar;
+        animation-duration: 1s;
+    }
+    .nav{
+        &__list{
+            flex-direction: column;
+            gap: 0;
+            .list-item{
+                &:nth-child(even){
+                    background-color: #eee;
+                }
+                &:nth-child(odd){
+                    background-color: #ddd;
+                }
+                transition: all 0.3s;
+                padding: 1rem 2rem;
+                &:hover{
+                    animation: none;
+                    transform: translateX(10px);
+                }
+            }
+        }
+    } 
+
+    .menu{
+        justify-content: space-between;
+    }
+
+    .mobile{
+        display: block;
+        i:last-child{
+            display: none;
+        }
+    }
+    
+    @keyframes showNavBar{
+        0%{
+            transform: translate(0);
+        }
+    
+        100%{
+            transform: translateY(170px);
+        }      
+    }
+
+    @keyframes hideNavBar{
+        0%{
+            transform: translateY(170px);
+        }
+    
+        100%{
+            transform: translate(0);
+        }      
+    }
+}

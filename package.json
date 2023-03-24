@@ -1,0 +1,14 @@
+{
+  "name": "navbar",
+  "version": "1.0.0",
+  "description": "This is html, css and js project in which I am building a beautiful responsive navbar",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
+  },
+  "author": "Ibrahim Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

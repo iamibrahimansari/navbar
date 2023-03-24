@@ -1,0 +1,27 @@
+.menu, ul{
+    display: flex;
+}
+
+.menu{
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.mobile{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    i{
+        cursor: pointer;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        font-size: 2rem;
+        transform:translate(-50%, -50%);
+    }
+    display: none;
+}

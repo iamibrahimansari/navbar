@@ -1,0 +1,67 @@
+ul{
+    gap: 2rem;
+    list-style-type: $listStyleType;
+    .list-item{
+        .link{
+            text-decoration: $textDecoration;
+            font-size: 1.8rem;
+            color: inherit;
+        }
+    }
+}
+
+.nav{
+    &__list{
+        .list-item{
+            a:link{
+                transition: all 0.3s;
+            }
+            a:hover{
+                color: $dodgerblue
+            }
+            &:hover{
+                animation: mainmenu 1s;
+            }
+        }
+        @keyframes mainmenu {
+            0%{
+                transform: rotateY(0);
+            }
+            
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}
+
+.social-links__list{
+    .list-item{
+        .gh{
+            color: #000;
+        }
+
+        .linkdin{
+            color: #0a66c2;
+        }
+        .twitter{
+            color: #1da1f2;
+        }
+        
+        .insta{
+            color: #c32aa3;
+        }
+        
+        .fb{
+            color:  #1877f2;
+        }
+
+        i{
+            transition: all 0.3s;
+        }
+
+        i:hover{
+            transform: translateY(-2px);
+        }
+    }
+}
